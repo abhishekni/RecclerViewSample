@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Locus-Assignment</string>
+    <string name="option_a">Option A</string>
+    <string name="option_b">Option B</string>
+    <string name="option_c">Option C</string>
+    <string name="title">Title</string>
+    <string name="submit">Submit</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="message">Do you want to clear the image</string>
+    <string name="alert_title">Clear Image !!!</string>
+    <string name="provide_comment">Provide Comment?</string>
+    <string name="type_comment">Type Comment</string>
+</resources>

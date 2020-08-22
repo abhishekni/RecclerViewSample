@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp_5"
+    tools:ignore="InvalidId">
+    <TextView
+        android:id="@+id/photo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="@dimen/sp_18"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/dp_10" />
+    <FrameLayout
+        android:layout_width="@dimen/dp_220"
+        android:layout_height="@dimen/dp_220"
+        android:layout_below="@+id/photo_title"
+        tools:ignore="UnknownId">
+    <ImageView
+        android:id="@+id/mPreviewIv"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_200"
+        android:background="@drawable/placeholder"
+        android:layout_gravity="center"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/mCloseIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="top|right"
+        android:src="@drawable/ic_close"
+        tools:ignore="UnknownId" />
+    </FrameLayout>
+</RelativeLayout>

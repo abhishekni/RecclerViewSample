@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/photo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <include layout="@layout/photo_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <include layout="@layout/choice_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice_layout"
+        android:visibility="gone"
+        tools:ignore="InvalidId">
+        <include layout="@layout/comment_layout" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

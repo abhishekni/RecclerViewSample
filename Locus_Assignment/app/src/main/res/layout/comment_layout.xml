@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:layout_margin="@dimen/dp_5"
+    tools:ignore="InvalidId">
+    <TextView
+        android:id="@+id/provideComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/provide_comment"
+        android:textSize="@dimen/sp_18"
+        android:layout_margin="@dimen/dp_10"/>
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_40"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/provideComment"
+        tools:ignore="UnknownId" />
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        android:layout_below="@+id/provideComment"
+        tools:ignore="UnknownId"
+        android:hint="@string/type_comment"
+        android:textSize="@dimen/sp_18"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:imeOptions="actionDone"
+        android:background="@drawable/border"/>
+</RelativeLayout>

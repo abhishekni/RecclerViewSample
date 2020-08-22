@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp_5"
+    tools:ignore="InvalidId">
+
+    <TextView
+        android:id="@+id/choice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="@dimen/sp_18"
+        android:layout_alignParentTop="true"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_20"
+        android:layout_below="@+id/choice_title"
+        tools:ignore="UnknownId">
+        <!--
+                    <RadioButton
+                        android:id="@+id/optionA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_a"
+                        tools:ignore="InvalidId" />
+
+                    <RadioButton
+                        android:id="@+id/optionB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_b"
+                        tools:ignore="InvalidId" />
+
+                    <RadioButton
+                        android:id="@+id/optionC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_c"
+                        tools:ignore="InvalidId" />-->
+    </RadioGroup>
+</RelativeLayout>
